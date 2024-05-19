@@ -1,0 +1,90 @@
+body{
+  background: white;
+  padding-top: 25px;
+  padding-bottom: 50px;
+}
+div.content{
+  width: 1000px;
+  margin-left: 100px;
+
+}
+#title{
+  color: red;
+}
+#map {
+  height: 550px;
+  width: 1050px
+}
+
+#cloud{
+  height: 300px;
+    width: 1000px;
+
+}
+#count{
+  height: 550px;
+  width: 1000px;
+  align: left;
+}
+#bigramlist{
+  -moz-column-count: 3;
+   -moz-column-gap: 20px;
+   -webkit-column-count: 3;
+   -webkit-column-gap: 20px;
+   column-count: 3;
+   column-gap: 20px;
+}
+#hashtag{
+  width: 1000px;
+  height: 600px;
+}
+
+h4{
+  color: blue;
+  font-size: 20px;
+}
+#head{
+  color:red;
+}
+.head{
+  color: red;
+  text-align: center;
+}
+
+.comment{
+  color: green;
+  font-size: 16px;
+}
+.link{
+  font-size: 15px;
+}
+
+div.table{
+  background-color: rgb(30, 33, 38);
+    width: 400px;
+    padding: 5px;
+    margin: 10px;
+    color: rgb(234, 229, 233);
+}
+.table p{
+  color: rgb(242, 115, 4);
+  font-size: 13px;
+  text-align: center;
+}
+.list li{
+  font-size: 10px;
+}
+
+.box{
+  display: flex;
+  flex: 10
+}
+#NMF{
+  width: 10px;
+  height:10px;
+}
+.topic{
+  font-size: 22;
+  color: red;
+  font-weight: bold;
+}

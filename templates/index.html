@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Twitter Sentiment Analysis Of Insurance Complaint</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="static/css/index.css">
+
+
+</head>
+
+<body>
+  <div class="content">
+    <div class="container">
+      <ul class="nav nav-tabs">
+        <li class="active"><a data-toggle="tab" href="#Twitter">Sentiment Analysis</a></li>
+      </ul>
+
+      <div class="tab-content">
+        <div id="Twitter" class="tab-pane fade in active">
+          <div class="webwidth">
+            <h3 id="head"><img src="//elearning.jbs.cam.ac.uk/pluginfile.php/1/theme_norse/loginlogo/1715065259/ExecEDrgb.png" alt="" width="300" height="150" align="top"></h3>
+            <h3 id="head">Twitter Sentiment Analysis Of Insurance Complaint</h3>
+
+              <p> This concept note is directed towards the Indonesia Financial Authority (OJK), specifically within the Insurance Industry Supervision Division, as an initiative to enhance the supervisory decision-making process and address reputation risks arising from insurance institutions.
+              </p>
+              <p>
+                Since 2021, there has been a significant rise in the number of complaints filed with OJK regarding the insurance industry, consistently remaining below 400 complaints annually before 2021 but exceeding 1200 complaints thereafter.  Therefore, allign with Roadmap for the Development and Strengthening of the Indonesian Insurance Industry 2023-2027, this innovative concept needs as a conduit, facilitating the connection between complaints disseminated across social media platforms, particularly on Twitter, and insurance supervisors especially on risk-based supervision (RBC) cycle process. By utilizing information technology through employing sentiment analysis, supervisors gain insight into public sentiment, enabling them to prioritize areas for supervision effectively.
+              </p>
+
+            <h4>Check Sentiment</h4>
+            <form action="{{ url_for('predict')}}" method="POST">
+              <p>Enter Your Message Here</p>
+              <!-- <input type="text" name="comment"/> -->
+              <textarea name="message" rows="4" cols="50"></textarea>
+              <br />
+
+              <input type="submit" class="btn-info" value="predict">
+              <div class="row">
+                <div class="col-md-4">
+                  <h4>Point</h4>
+                  <iframe class="map", src="/get_point" width="400" height="500"></iframe>
+                </div>
+                <div class="col-md-4">
+                  <h4>Cluster Map</h4>
+                  <iframe class="map", src="/get_map" width="400" height="500"></iframe>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
